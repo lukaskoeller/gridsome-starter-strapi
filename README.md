@@ -6,7 +6,41 @@ Under the hood, the starter is using the source plugin [`@gridsome/source-strapi
 
 ## Strapi Setup
 
-TBD
+*Note: The first two steps (marked with a check) are already done and are just necessary if you set up a completely new project.*
+
+1. ✅ Install the [@gridsome/source-strapi](https://gridsome.org/plugins/@gridsome/source-strapi) Plugin: `npm install @gridsome/source-strapi --save`
+2. ✅ Add it to the config file:
+```
+export default {
+  plugins: [
+    {
+      use: '@gridsome/source-strapi',
+      options: {
+        apiURL: 'http://localhost:1337',
+        queryLimit: 1000, // Defaults to 100
+        contentTypes: ['article', 'user'],
+        // Possibility to login with a Strapi user,
+        // when content types are not publicly available (optional).
+        loginData: {
+          identifier: '',
+          password: ''
+        }
+      }
+    }
+  ]
+}
+```
+3. Install Strapi by following the [Get Started Guide](https://strapi.io/documentation/v3.x/getting-started/quick-start.html).
+4. Install Strapi and create a new project: `npx create-strapi-app gridsome-starter-strapi-cms --quickstart`.
+5. Complete the form to create the first Administrator user.
+6. Since we are using GraphQL, install the GraphQL plugin: `npm run strapi install graphql`. Open the GraphQL Playground ([http://localhost:1337/graphql](http://localhost:1337/graphql)) to test your queries.
+7. Restart your server: `npm run develop`.
+8. In the Strapi Admin Interface you can now add Content Types (`Plugins` > `Content-Types Builder` > `Create new collection type`).
+9. Name you new collection type `Post`.
+10. Now, add 4 fields, namely `title` (text), `subtitle` (text), `article` (rich text) and `picture` (media).
+11. Click on `Save`.
+12. Add blog entries by clicking on `Collection Types` > `Posts` > `Add New Post`.
+13. Finally, you should be able to query your blog entries with Gridsome.
 
 ## Initial Setup
 
