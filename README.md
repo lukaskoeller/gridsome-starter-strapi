@@ -40,6 +40,7 @@ export default {
 10. Now, add 4 fields, namely `title` (text), `subtitle` (text), `article` (rich text) and `picture` (media).
 11. Click on `Save`.
 12. Add blog entries by clicking on `Collection Types` > `Posts` > `Add New Post`.
+13. Go to `Plugins` > `Roles & Permissions`. Click on the column saying `Public`. Put a check on `find` and `findOne` under `Post`. Click on `Save`.
 13. Finally, you should be able to query your blog entries with Gridsome.
 
 ## Initial Setup
