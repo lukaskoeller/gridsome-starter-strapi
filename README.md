@@ -2,7 +2,7 @@
 
 This is a Gridsome Starter using the headless CMS [Strapi](https://strapi.io). It is suppose to kick-start development.
 
-Under the hood, the starter is using the source plugin [`@gridsome/source-strapi`](https://gridsome.org/plugins/@gridsome/source-strapi) to pull data from Strapi into Gridsome's data store.
+Under the hood, the starter is using the source plugin [`@gridsome/source-strapi`](https://gridsome.org/plugins/@gridsome/source-strapi) to pull data from Strapi into Gridsome's data store. Furthermore, [`MVP.css`](https://andybrewer.github.io/mvp/) is used for basic styling.
 
 ## Strapi Setup
 
