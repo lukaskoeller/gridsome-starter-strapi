@@ -2,7 +2,7 @@
 
 # gridsome-starter-strapi
 
-This is a Gridsome Starter using the headless CMS [Strapi](https://strapi.io). It is suppose to kick-start development.
+This is a Gridsome Starter using the headless CMS [Strapi](https://strapi.io). It is suppose to kick-start development with Strapi. A [Demo](https://gridsome-starter-strapi.netlify.com) is hosted on Netlify.
 
 Under the hood, the starter is using the source plugin [`@gridsome/source-strapi`](https://gridsome.org/plugins/@gridsome/source-strapi) to pull data from Strapi into Gridsome's data store.
 
@@ -60,3 +60,7 @@ export default {
 2. ✅ `cd gridsome-starter-strapi` to open the folder
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
+
+## 💫 Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lukaskoeller/gridsome-starter-strapi)
