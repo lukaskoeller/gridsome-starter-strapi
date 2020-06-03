@@ -34,20 +34,19 @@ query {
 </static-query>
 
 <style>
-/* MVP.css v1.6.2 - https://github.com/andybrewer/mvp */
-
 :root {
     --border-radius: 0.4rem;
     --box-shadow: 2px 2px 10px;
-    --color: #03045e;
-    --color-accent: #0077b6;
-    --color-bg: #fff;
-    --color-bg-secondary: #caf0f8;
-    --color-secondary: #00b4d8;
-    --color-secondary-accent: #90e0ef;
-    --color-shadow: #f4f4f4;
-    --color-text: #000;
-    --color-text-secondary: #999;
+    --color-numbers: 239, 94%, 19%;
+    --color: hsl(239, 94%, 19%);
+    --color-accent: hsl(201, 100%, 36%);
+    --color-bg: hsl(0, 0%, 100%);
+    --color-bg-secondary: hsl(190, 77%, 88%);
+    --color-secondary: hsl(190, 100%, 42%);
+    --color-secondary-accent: hsl(189, 75%, 75%);
+    --color-shadow: hsl(0, 0%, 96%);
+    --color-text: hsl(0, 0%, 100%);
+    --color-text-secondary: hsl(0, 0%, 60%);
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     --hover-brightness: 1.2;
     --line-height: 1.5;
