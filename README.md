@@ -1,6 +1,7 @@
 <p align="center">
   <img alt="Gridsome-Starter-Strapi" src="strapi-gridsome.png" width="160" />
 </p>
+
 # gridsome-starter-strapi
 
 This is a Gridsome Starter using the headless CMS [Strapi](https://strapi.io). It is suppose to kick-start development.
