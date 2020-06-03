@@ -18,7 +18,7 @@ export default {
       options: {
         apiURL: 'http://localhost:1337',
         queryLimit: 1000, // Defaults to 100
-        contentTypes: ['article', 'user'],
+        contentTypes: ['post'],
         // Possibility to login with a Strapi user,
         // when content types are not publicly available (optional).
         loginData: {
@@ -41,6 +41,7 @@ export default {
 11. Click on `Save`.
 12. Add blog entries by clicking on `Collection Types` > `Posts` > `Add New Post`.
 13. Go to `Plugins` > `Roles & Permissions`. Click on the column saying `Public`. Put a check on `find` and `findOne` under `Post`. Click on `Save`.
+14. ✅ In `gridsome.config.js` add `post` under `contentTypes`.
 13. Finally, you should be able to query your blog entries with Gridsome.
 
 ## Initial Setup
