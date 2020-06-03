@@ -6,7 +6,7 @@ A **[Demo](https://gridsome-starter-strapi.netlify.com)** is hosted on Netlify.
 
 Under the hood, the starter is using the source plugin [`@gridsome/source-strapi`](https://gridsome.org/plugins/@gridsome/source-strapi) to pull data from Strapi into Gridsome's data store.
 
-![Gridsome-Starter-Strapi Preview](gridsome-starter-strapi-1680x1680.png)
+![Gridsome-Starter-Strapi Preview](https://raw.githubusercontent.com/lukaskoeller/gridsome-starter-strapi/master/gridsome-starter-strapi-1680x1680.png)
 
 ## Strapi Setup
 
