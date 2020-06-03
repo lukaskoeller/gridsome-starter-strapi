@@ -1,8 +1,8 @@
-![Gridsome-Starter-Strapi Preview](strapi-gridsome.png)
-
 # gridsome-starter-strapi
 
-This is a Gridsome Starter using the headless CMS [Strapi](https://strapi.io). It is suppose to kick-start development with Strapi. A [Demo](https://gridsome-starter-strapi.netlify.com) is hosted on Netlify.
+This is a Gridsome Starter using the headless CMS [Strapi](https://strapi.io). It is suppose to kick-start development with Strapi. 
+
+A **[Demo](https://gridsome-starter-strapi.netlify.com)** is hosted on Netlify.
 
 Under the hood, the starter is using the source plugin [`@gridsome/source-strapi`](https://gridsome.org/plugins/@gridsome/source-strapi) to pull data from Strapi into Gridsome's data store.
 
