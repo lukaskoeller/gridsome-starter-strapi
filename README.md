@@ -1,6 +1,4 @@
-<p align="center">
-  <img alt="Gridsome-Starter-Strapi" src="strapi-gridsome.png" width="160" />
-</p>
+![Gridsome-Starter-Strapi Preview](strapi-gridsome.png)
 
 # gridsome-starter-strapi
 
