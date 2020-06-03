@@ -10,7 +10,7 @@ Under the hood, the starter is using the source plugin [`@gridsome/source-strapi
 
 ## Strapi Setup
 
-*Note: The first two steps (marked with a check) are already done and are just necessary if you set up a completely new project.*
+*Note: Steps that are marked with a check are already done and are just necessary if you set up a completely new project.*
 
 1. ✅ Install the [@gridsome/source-strapi](https://gridsome.org/plugins/@gridsome/source-strapi) Plugin: `npm install @gridsome/source-strapi --save`
 2. ✅ Add it to the config file:
