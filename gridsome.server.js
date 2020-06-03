@@ -12,10 +12,10 @@ module.exports = function (api) {
         edges {
           node {
               id
-              headline
-              Subtitle
-              Article
-              Picture {
+              title
+              subtitle
+              article
+              image {
                 url
                 caption
               }

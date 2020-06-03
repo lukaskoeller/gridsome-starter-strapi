@@ -25,15 +25,6 @@ Filet mignon strip steak turducken swine pancetta bacon flank t-bone. Porchetta 
   </Layout>
 </template>
 
-<page-query>
-query {
-  strapiPost(id: 1) {
-    headline
-    id
-  }
-}
-</page-query>
-
 <script>
 export default {
   metaInfo: {

@@ -3,7 +3,7 @@
     <h1>Hi, and welcome to my Blog! 👋</h1>
     <section>
       <div class="post" v-for="post in $page.allStrapiPost.edges" :key="post.node.id">
-        <g-image class="post__img" :src="`http://localhost:1337${post.node.picture.formats.small.url}`"/>
+        <g-image class="post__img" :src="`http://localhost:1337${post.node.image.url}`" :title="post.node.image.caption" />
         <g-link :to="`/blog/${post.node.id}`" class="post__info">
           <h2 class="post__title">{{ post.node.title }}</h2>
           <h4 class="post__subtitle">{{ post.node.subtitle }}</h4>
@@ -22,12 +22,8 @@ query {
           title
           subtitle
           article
-          picture {
-            formats {
-              small {
-                url
-              }
-            }
+          image {
+            url
             caption
           }
       }
@@ -53,7 +49,7 @@ h1 {
 
 section {
   width: 100%;
-  margin-bottom: 5rem;
+  margin-bottom: 11.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
   grid-gap: 2rem;

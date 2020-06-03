@@ -41,7 +41,7 @@ export default {
 7. Restart your server: `npm run develop`.
 8. In the Strapi Admin Interface you can now add Content Types (`Plugins` > `Content-Types Builder` > `Create new collection type`).
 9. Name you new collection type `Post`.
-10. Now, add 4 fields, namely `title` (text), `subtitle` (text), `article` (rich text) and `picture` (media).
+10. Now, add 4 fields, namely `title` (text), `subtitle` (text), `article` (rich text) and `image` (single media).
 11. Click on `Save`.
 12. Add blog entries by clicking on `Collection Types` > `Posts` > `Add New Post`.
 13. Go to `Plugins` > `Roles & Permissions`. Click on the column saying `Public`. Put a check on `find` and `findOne` under `Post`. Click on `Save`.
