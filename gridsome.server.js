@@ -5,6 +5,10 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const fs = require('fs');
+const http = require('http');
+const path = require('path');
+
 module.exports = function (api) {
   api.createPages(async ({ graphql, createPage }) => {
     const { data } = await graphql(`{
@@ -32,6 +36,17 @@ module.exports = function (api) {
           id: node.id
         }
       })
+    })
+  })
+
+  api.onCreateNode(options => {
+    const filePath = `./src/assets/images/${options.image.hash + options.image.ext}`;
+
+    http.get(`http://localhost:1337${options.image.url}`, (response) => {
+      options.image.url = path.resolve(__dirname, filePath);
+
+      const file = fs.createWriteStream(filePath);
+      response.pipe(file);
     })
   })
 }

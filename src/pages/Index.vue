@@ -3,7 +3,7 @@
     <h1>Hi, and welcome to my Blog! 👋</h1>
     <section>
       <div class="post" v-for="post in $page.allStrapiPost.edges" :key="post.node.id">
-        <g-image class="post__img" :src="`http://localhost:1337${post.node.image.url}`" :title="post.node.image.caption" />
+        <g-image class="post__img" :src="post.node.image.url" :title="post.node.image.caption" />
         <g-link :to="`/blog/${post.node.id}`" class="post__info">
           <h2 class="post__title">{{ post.node.title }}</h2>
           <h4 class="post__subtitle">{{ post.node.subtitle }}</h4>
