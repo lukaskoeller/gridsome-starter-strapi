@@ -2,7 +2,7 @@
   <Layout>
     <article>
         <div class="article__hero">
-            <g-image class="article__img" :src="`http://localhost:1337${$page.strapiPost.image.url}`"/>
+            <g-image class="article__img" :src="$page.strapiPost.image.url"/>
         </div>
         <h1 class="article__title">{{ $page.strapiPost.title }}</h1>
         <div class="article__body">
