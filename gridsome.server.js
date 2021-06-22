@@ -39,8 +39,20 @@ module.exports = function (api) {
     })
   })
 
-  api.onCreateNode(options => {
-    const filePath = `./src/assets/images/${options.image.hash + options.image.ext}`;
+  api.onCreateNode((options, collection) => {
+    // Transform article markdown into html
+    if (options.article) {
+      const markdownStore = collection._store.addCollection('StrapiMarkdown');
+      const markdownNode = markdownStore.addNode({
+        internal: {
+          mimeType: 'text/markdown',
+          content: options.article,
+          origin: options.id,
+        }
+      });
+
+      options.content = collection._store.createReference(markdownNode)
+    }
 
     http.get(`http://localhost:1337${options.image.url}`, (response) => {
       options.image.url = path.resolve(__dirname, filePath);
