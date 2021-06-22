@@ -8,6 +8,8 @@ Under the hood, the starter is using the source plugin [`@gridsome/source-strapi
 
 Images provided by Strapi are downloaded and saved locally via `onCreateNode`. Thus, the build version includes all images in `/static`.
 
+Rich text which is provided as markdown from Strapi is prepared via `onCreateNode` and transformed to html using [@gridsome/transformer-remark](https://gridsome.org/plugins/@gridsome/transformer-remark).
+
 ![Gridsome-Starter-Strapi Preview](https://raw.githubusercontent.com/lukaskoeller/gridsome-starter-strapi/master/gridsome-starter-strapi-1680x1680.png)
 
 ## Strapi Setup
