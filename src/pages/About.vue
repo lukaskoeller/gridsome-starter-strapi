@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1>{{ $page.strapiAbout.title }}</h1>
-    <article class="about" v-html="$page.strapiAbout.content.content" />
+    <div class="about" v-html="$page.strapiAbout.content.content" />
   </Layout>
 </template>
 
