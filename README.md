@@ -77,6 +77,10 @@ export default {
 
 ## 🐛 Debugging
 * Since we are working with GraphQL, the [GraphQL explorer](https://gridsome.org/docs/data-layer/#the-graphql-explorer) can be very helpful. You can open it through `http://localhost:8080/___explore`.
+
+## Troubleshooting
+* If you get `TypeError: gridsome.server.js: Cannot read property 'allStrapiPost' of undefined (31:10)` as an error after starting the gridsome development server, you likely forgot to create and/or **publish** your post in Strapi under `Collection Types` > `Posts`.
+
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lukaskoeller/gridsome-starter-strapi)
