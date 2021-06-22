@@ -43,14 +43,14 @@ export default {
 5. Complete the form to create the first Administrator user.
 6. Since we are using GraphQL, install the GraphQL plugin: `npm run strapi install graphql`. Open the GraphQL Playground ([http://localhost:1337/graphql](http://localhost:1337/graphql)) to test your queries.
 7. Restart your server: `npm run develop`.
-8. In the Strapi Admin Interface you can now add Content Types (`Plugins` > `Content-Types Builder` > `Create new collection type`).
-9. Name you new collection type `Post`.
-10. Now, add 4 fields, namely `title` (text), `subtitle` (text), `article` (rich text) and `image` (single media).
-11. Click on `Save`.
-12. Add blog entries by clicking on `Collection Types` > `Posts` > `Add New Post`.
-13. Go to `Plugins` > `Roles & Permissions`. Click on the column saying `Public`. Put a check on `find` and `findOne` under `Post`. Click on `Save`.
-14. ✅ In `gridsome.config.js` add `post` under `contentTypes`.
-13. Finally, you should be able to query your blog entries with Gridsome.
+### Create Posts
+1. In the Strapi Admin Interface you can now add Content Types (`Plugins` > `Content-Types Builder` > `Create new collection type`).
+2. Name you new collection type `Post`.
+3. Now, add 4 fields, namely `title` (text), `subtitle` (text), `article` (rich text) and `image` (single media).
+4. Click on `Save` & `Publish`.
+5. Add blog entries by clicking on `Collection Types` > `Posts` > `Add New Post`.
+6. Go to `Settings` > `Roles` under `USERS & PERMISSIONS PLUGIN`. Click on the column saying `Public`. Put a check on `find` and `findOne` under `Post`. Click on `Save`.
+7. ✅ In `gridsome.config.js` add `post` (API ID) under `contentTypes`.
 
 ## Gridsome Setup
 
