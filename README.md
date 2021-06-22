@@ -52,6 +52,15 @@ export default {
 6. Go to `Settings` > `Roles` under `USERS & PERMISSIONS PLUGIN`. Click on the column saying `Public`. Put a check on `find` and `findOne` under `Post`. Click on `Save`.
 7. ✅ In `gridsome.config.js` add `post` (API ID) under `contentTypes`.
 
+### Create About
+1. In the Strapi Admin Interface you can now add Content Types (`Plugins` > `Content-Types Builder` > `Create new single type`).
+2. Name you new collection type `About`.
+3. Now, add 2 fields, namely `title` (text) and `article` (rich text).
+4. Click on `Save` & `Publish`.
+5. Add content to the about page by clicking on `Single Types` > `About`.
+6. Go to `Settings` > `Roles` under `USERS & PERMISSIONS PLUGIN`. Click on the column saying `Public`. Put a check on `find` under `About`. Click on `Save`.
+7. ✅ In `gridsome.config.js` add `about` (API ID) under `singleTypes`.
+
 ## Gridsome Setup
 
 ### 1. Install Gridsome CLI tool if you don't have
