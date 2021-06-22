@@ -43,6 +43,7 @@ export default {
 5. Complete the form to create the first Administrator user.
 6. Since we are using GraphQL, install the GraphQL plugin: `npm run strapi install graphql`. Open the GraphQL Playground ([http://localhost:1337/graphql](http://localhost:1337/graphql)) to test your queries.
 7. Restart your server: `npm run develop`.
+
 ### Create Posts
 1. In the Strapi Admin Interface you can now add Content Types (`Plugins` > `Content-Types Builder` > `Create new collection type`).
 2. Name you new collection type `Post`.
@@ -74,6 +75,8 @@ export default {
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
 
+## 🐛 Debugging
+* Since we are working with GraphQL, the [GraphQL explorer](https://gridsome.org/docs/data-layer/#the-graphql-explorer) can be very helpful. You can open it through `http://localhost:8080/___explore`.
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lukaskoeller/gridsome-starter-strapi)
