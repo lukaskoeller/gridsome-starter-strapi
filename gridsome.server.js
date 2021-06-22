@@ -54,11 +54,16 @@ module.exports = function (api) {
       options.content = collection._store.createReference(markdownNode)
     }
 
-    http.get(`http://localhost:1337${options.image.url}`, (response) => {
-      options.image.url = path.resolve(__dirname, filePath);
+    // Download image from Strapi and save it in ./src/assets/images
+    if (options.image) {
+      const filePath = `./src/assets/images/${options.image.hash + options.image.ext}`;
 
-      const file = fs.createWriteStream(filePath);
-      response.pipe(file);
-    })
-  })
+      http.get(`http://localhost:1337${options.image.url}`, (response) => {
+        options.image.url = path.resolve(__dirname, filePath);
+
+        const file = fs.createWriteStream(filePath);
+        response.pipe(file);
+      });
+    }
+  });
 }
