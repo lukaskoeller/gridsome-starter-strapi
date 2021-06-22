@@ -110,4 +110,11 @@ footer strong a {
 footer span {
   color: var(--color-accent);
 }
+
+blockquote {
+  margin: 0;
+  padding-left: 40px;
+  box-shadow: inset 3px 0px 0px var(--color-secondary-accent);
+}
+
 </style>
