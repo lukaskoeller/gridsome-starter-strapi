@@ -21,6 +21,9 @@ module.exports = {
           password: ''
         }
       }
-    }
+    },
+    {
+      use: '@gridsome/transformer-remark',
+    },
   ]
 }
